@@ -1,0 +1,119 @@
+<div id="masthead">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7">
+        <h1>
+          Add New Book
+          <p class="lead"></p>
+        </h1>
+      </div>
+      <div class="col-md-5">
+        <div class="well well-lg">
+          <div class="row">
+            <div class="col-sm-12"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="top-spacer"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="panel">
+        <div class="panel-body">
+          <form (ngSubmit)="AddBook()">
+            <div class="table-responsive">
+              <table class="table" style="margin-top: 15px">
+                <tbody>
+                  <tr>
+                    <td><label>Title</label></td>
+                    <td>
+                      <input
+                        type="text"
+                        style="width: 250px"
+                        name="title"
+                        [(ngModel)]="bookItem.title"
+                        required
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><label>Author</label></td>
+                    <td>
+                      <input
+                        type="text"
+                        style="width: 250px"
+                        name="author"
+                        [(ngModel)]="bookItem.author"
+                        required
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><label>Genre</label></td>
+                    <td>
+                      <input
+                        type="text"
+                        style="width: 250px"
+                        name="genre"
+                        [(ngModel)]="bookItem.genre"
+                        required
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><label>Description</label></td>
+                    <td>
+                      <input
+                        type="text"
+                        style="width: 250px"
+                        name="desc"
+                        [(ngModel)]="bookItem.description"
+                        required
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><label>Image Url</label></td>
+                    <td>
+                      <input
+                        type="text"
+                        style="width: 250px"
+                        name="image"
+                        [(ngModel)]="bookItem.image"
+                        required
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>
+                      <button type="submit" class="btn btn-info">Submit</button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </form>
+
+          <a href="/" class="btn btn-primary pull-right btnNext"
+            >More <i class="glyphicon glyphicon-chevron-right"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<hr />
+
+<hr />

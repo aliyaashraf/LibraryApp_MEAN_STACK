@@ -1,0 +1,103 @@
+<div id="masthead">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7">
+        <h1>
+          Add New Author
+          <p class="lead"></p>
+        </h1>
+      </div>
+      <div class="col-md-5">
+        <div class="well well-lg">
+          <div class="row">
+            <div class="col-sm-12"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="top-spacer"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="panel">
+        <div class="panel-body">
+          <form (ngSubmit)="AddAuthor()">
+            <div class="table-responsive">
+              <table class="table" style="margin-top: 15px">
+                <tbody>
+                  <tr>
+                    <td><label>Name</label></td>
+                    <td>
+                      <input
+                        type="text"
+                        style="width: 250px"
+                        name="title"
+                        [(ngModel)]="authorItem.aname"
+                        required
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><label>Famous books</label></td>
+                    <td>
+                      <input
+                        type="text"
+                        style="width: 250px"
+                        name="books"
+                        [(ngModel)]="authorItem.books"
+                        required
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><label>Description</label></td>
+                    <td>
+                      <input
+                        type="text"
+                        style="width: 250px"
+                        name="desc"
+                        [(ngModel)]="authorItem.desc"
+                        required
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><label>Image Url</label></td>
+                    <td>
+                      <input
+                        type="text"
+                        style="width: 250px"
+                        name="image"
+                        [(ngModel)]="authorItem.image"
+                        required
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>
+                      <button type="submit" class="btn btn-info">Submit</button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<hr />
+
+<hr />
